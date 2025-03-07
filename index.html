@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/projects.js"></script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body onload="loadProjects()">
+    <div class="container">
+
+        <h1>My Portfolio</h1>
+        <div class="section">
+            <h2>
+                About Me
+            </h2>
+            <p>
+                My name is Steven Tavares. I was born in Los Gatos, California in 1988. I grew up overseas in Thailand where I attended the International School of Bangkok, Thailand. After my freshman year in high school living overseas, I returned to the United States where I would move from California to Longmont, Colorado. I am a Colorado State University Graduate with a Bachelors in History and a Minor in Geography. A few years after I graduated, I decided to return to school where I would earn a certification in GIS in the Geospatial field. After working a few years in the Geospatial field at Vexcel Intelligence and Maxar Intelligence, I would currently return to school in 2024 while working full time, this time at the University of Texas at Austin online to obtain a Fullstack Web and Application Development certification. In my free time, I practice and play on a competitive men's Divisional Rugby League For the Northglenn Marauders. I also like to spend time with my girlfriend Lauren, and my dog Koda. I also have a deep passion for hiking and love for the outdoors.
+            </p>
+        </div>
+        <div id="form-container">
+            <h2>
+                Enter New Project Details
+            </h2>
+            <form action="" onsubmit="event.preventDefault()">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="title">Project Title 
+                               
+                            </label>
+                           
+                        </td>
+                        <td>
+                            <input type="text" name="title" id="title" placeholder="Title...">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="desc">
+                                Project Description 
+                               
+                            </label>
+
+                        </td>
+                        <td>
+                            <textarea name="desc" id="desc" cols="15" rows="5" placeholder="Description..."></textarea>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <label for="image">Image
+                               
+                            </label>
+
+                        </td>
+                        <td>
+                            <input type="text" name="image" id="image">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit" onclick="saveNewProject()">Save</button>
+                        </td>
+                    </tr>
+                    
+                    
+
+                </table>
+                
+
+            </form>
+        </div>
+        <div id="projects-section" class="section">
+            <h2>My Projects</h2>
+            <div id="projects">
+
+            </div>
+            
+        </div>
+        
+        
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
